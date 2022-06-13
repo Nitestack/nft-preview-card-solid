@@ -13,7 +13,7 @@ const Card: ParentComponent<{
     imagePath: string;
 }> = (props) => {
     return (
-        <div class="p-7 bg-custom-very-dark-blue-cardbg rounded-xl flex-col items-center justify-start space-y-6 w-96">
+        <div class="p-7 shadow-xl bg-custom-very-dark-blue-cardbg rounded-xl flex-col items-center justify-start space-y-6 w-96">
             <img src={props.imagePath} class="rounded-lg" />
             <div class="font-semibold text-3xl text-custom-white">{props.name} #{props.discriminator}</div>
             <div class="font-light text-custom-soft-blue">{props.description}</div>
